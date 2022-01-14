@@ -87,12 +87,19 @@ public class VectorClassEx {
 		System.out.println("[객체 오름차순 정렬하기]");
 		Collections.sort(list);
 		System.out.println(list);
+		//[김진명, 김홍신, 박경리, 박근혜, 이문열]
 		
 		System.out.println();  //줄바꿈
 		/* 가변배열의 객체 정렬하기 => 내림차순(Descending Sort 양자로 desc) */
 		System.out.println("[객체 내림차순 정렬하기]");
 		Collections.sort(list, Collections.reverseOrder());
 		System.out.println(list);
+		//[이문열, 박근혜, 박경리, 김홍신, 김진명]
+		
+		System.out.println();  //줄바꿈
+		list.add("김홍신");  //Vector 객체는 '중복저장' 가능
+		System.out.println(list);
+		//[이문열, 박근혜, 박경리, 김홍신, 김진명, 김홍신]
 		
 	}
 
